@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2DFF0000"
+    android:backgroundTintMode="add"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/comida3" />
+
+    <TextView
+        android:id="@+id/txtFinalizado"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="#77000000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:text="Pedido Finalizado \n Obrigado Pela Preferencia."
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgFinalizado"
+        app:layout_constraintTop_toBottomOf="@+id/btnFinalizar" />
+
+    <CheckBox
+        android:id="@+id/chkRefri"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#000000"
+        android:buttonTint="#FF0000"
+        android:checked="false"
+        android:editable="false"
+        android:foregroundTint="#FF0000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:soundEffectsEnabled="true"
+        android:text="Refrigerante R$5,50"
+        android:textColor="#E91E1E"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/chkPizza" />
+
+    <CheckBox
+        android:id="@+id/chkPizza"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#000000"
+        android:buttonTint="#FF0000"
+        android:foregroundTint="#FF0000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:soundEffectsEnabled="true"
+        android:text="Pizza R$35,00"
+        android:textColor="#E91E1E"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chkRefri"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/chkSand" />
+
+    <CheckBox
+        android:id="@+id/chkFrango"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#000000"
+        android:buttonTint="#FF0000"
+        android:foregroundTint="#FF0000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:soundEffectsEnabled="true"
+        android:text="Frango Frito R$12,50"
+        android:textColor="#E91E1E"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/imageView6"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/chkBurrito" />
+
+    <CheckBox
+        android:id="@+id/chkSand"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="#000000"
+        android:buttonTint="#FF0000"
+        android:foregroundTint="#FF0000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:soundEffectsEnabled="true"
+        android:text="Sanduiche R$14,50"
+        android:textColor="#E91E1E"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chkPizza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:adjustViewBounds="true"
+        android:background="#54000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/chkFrango"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/frango_frito" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:background="#54000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView6"
+        app:layout_constraintEnd_toStartOf="@+id/chkPizza"
+        app:layout_constraintStart_toEndOf="@+id/chkBurrito"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:background="#54000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView5"
+        app:layout_constraintEnd_toStartOf="@+id/chkSand"
+        app:layout_constraintStart_toEndOf="@+id/chkHamburg"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/sanduiche" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        android:background="#54000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/chkRefri"
+        app:layout_constraintStart_toEndOf="@+id/chkFrango"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:srcCompat="@drawable/refrigerante" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:adjustViewBounds="true"
+        android:background="#54000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toStartOf="@+id/chkBurrito"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/burrito" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:background="#00C61717"
+        android:backgroundTint="#00FF0000"
+        android:shadowColor="#117000"
+        android:shadowRadius="3"
+        android:text="Cosmo Food "
+        android:textAlignment="center"
+        android:textColor="#FF0000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="11dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_astronauta" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:padding="5dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:text="Faça suas compras em nosso cardapio Virtual"
+        android:textColor="#FD0303"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="15dp"
+        android:adjustViewBounds="true"
+        android:background="#54000000"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toStartOf="@+id/chkHamburg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/hamburguer" />
+
+    <TextView
+        android:id="@+id/txtPedido"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#A30E0E0E"
+        android:padding="1dp"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:text="Valor Final do Pedido R$00,00"
+        android:textColor="#FF0000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinalizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <CheckBox
+        android:id="@+id/chkHamburg"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#000000"
+        android:buttonTint="#FF0000"
+        android:foregroundTint="#FF0000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:soundEffectsEnabled="true"
+        android:text="Hamburguer Artesanal R$20,00"
+        android:textColor="#E91E1E"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chkBurrito"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <CheckBox
+        android:id="@+id/chkBurrito"
+        android:layout_width="125dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#000000"
+        android:buttonTint="#FF0000"
+        android:foregroundTint="#FF0000"
+        android:shadowColor="#000000"
+        android:shadowRadius="15"
+        android:soundEffectsEnabled="true"
+        android:text="Burrito R$14,50"
+        android:textColor="#E91E1E"
+        android:textColorHint="#000000"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/chkFrango"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/chkHamburg" />
+
+    <ImageView
+        android:id="@+id/imgFinalizado"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:adjustViewBounds="true"
+        android:background="#77000000"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtFinalizado"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFinalizar"
+        app:srcCompat="@drawable/finaliza_pedido" />
+
+    <Button
+        android:id="@+id/btnFinalizar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Finalizar"
+        app:layout_constraintBottom_toTopOf="@+id/txtFinalizado"
+        app:layout_constraintEnd_toStartOf="@+id/btnLimpar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPedido" />
+
+    <Button
+        android:id="@+id/btnLimpar"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Limpar"
+        app:layout_constraintBottom_toTopOf="@+id/txtFinalizado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnFinalizar"
+        app:layout_constraintTop_toBottomOf="@+id/txtPedido" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginBottom="200dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toStartOf="@+id/chkRefri"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
